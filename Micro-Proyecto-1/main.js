@@ -1,4 +1,0 @@
-function redirigir() {
-  window.onload()
-}
-

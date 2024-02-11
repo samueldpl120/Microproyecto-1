@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partida Iniciada</title>
+    <link rel="stylesheet" href="style_page2.css" type="text/css" />
+  </head>
+  <body>
+    <div class="turno">
+      <h1>Turno</h1>
+      <h2 id="turno"></h2>
+    </div>
+    <div class="todo">
+      <div class="sacarNum">
+        <button
+          id="btnSacarNum"
+          onclick="mostrarFormulario(); mostrarFondoOscuro()"
+        >
+          Sacar Numero
+        </button>
+      </div>
+      <div class="container">
+        <h2><span id="jugador"></span></h2>
+        <div id="matriz-container">
+          <div id="popup" class="popup">
+            <h1><span id="number"></span></h1>
+            <button
+              id="exit"
+              onclick="ocultarPopup(); ocultarFondoOscuro(); ActualJugador()"
+            >
+              Listo
+            </button>
+          </div>
+        </div>
+
+        <div class="button">
+          <button id="btnRetroceder" onclick="Retroceder()">Anterior</button>
+          <button id="btnSiguiente" onclick="siguienteJugador()">
+            Siguiente
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="button2">
+      <button id="btnSalir" onclick="vaciarSessionStorageYRedirigir()">
+        Salir
+      </button>
+    </div>
+    <div id="popup2" class="popup2"></div>
+    <div id="fondoOscuro"></div>
+  </body>
+  <script src="script2.js"></script>
+</html>
